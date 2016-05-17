@@ -17,8 +17,10 @@ public class IceroadMod {
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         registerFoodItem("burger");
+        registerFoodItem("fries");
+        registerFoodItem("milkshake");
+        registerFoodItem("chicken");
     }
-
 
     public void registerFoodItem(String name) {
         final ItemFood foodItem = new ItemFood(3, 0.2f, false);
